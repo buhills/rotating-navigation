@@ -68,11 +68,6 @@ body {
   transform-origin: top left;
 }
 
-.container.show-nav + nav li {
-  transform: translateX(0);
-  transition-delay: 0.3s;
-}
-
 nav {
   position: fixed;
   bottom: 40px;
@@ -103,9 +98,14 @@ nav ul li + li {
   transform: translateX(-150%);
 }
 
-nav ul li + li + li{
+nav ul li + li + li {
   margin-left: 30px;
   transform: translateX(-200%);
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
 }
 
 .content img {
